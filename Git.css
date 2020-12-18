@@ -9,4 +9,10 @@ h1 {
 h2 {
     background-color:dodgerblue;
     margin-right:80%;
+    padding:1vh;
+    border-radius:1vw;
+}
+
+a:active {
+    color:rgb(167, 108, 0);
 }
