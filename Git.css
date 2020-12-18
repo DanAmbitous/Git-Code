@@ -17,6 +17,7 @@ h4 {
     margin-right:85%;
     padding:1vh;
     border-radius:1vw;
+    border-right:1vw solid rgb(255, 166, 0);
 }
 
 a:active {
