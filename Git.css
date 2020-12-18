@@ -8,10 +8,5 @@ h1 {
 
 h2 {
     background-color:dodgerblue;
-    display:flex;
-    flex-shrink: ;
-}
-
-#content {
-    
+    margin-right:80%;
 }
