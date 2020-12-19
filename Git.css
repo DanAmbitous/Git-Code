@@ -35,3 +35,13 @@ code {
 li {
     padding:1vw;
 }
+
+form {
+    text-align: center;
+}
+
+.questionOne {
+    background-color:rgb(226, 147, 0);
+    padding:1%;
+    border-radius:5vw;
+}
