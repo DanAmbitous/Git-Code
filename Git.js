@@ -1,3 +1,3 @@
 $(function() {
-    $("form").html("This is a form element.");
+    $('form').text('The form is being made');
 })
