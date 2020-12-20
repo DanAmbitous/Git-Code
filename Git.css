@@ -40,8 +40,28 @@ form {
     text-align: center;
 }
 
-.questionOne {
+.questions {
     background-color:rgb(226, 147, 0);
     padding:1%;
     border-radius:5vw;
+}
+
+#button {
+    display:flex;
+    justify-content: center;
+}
+
+button {
+    background-color: lime;
+    padding:1vw;
+    border-radius:1vw;
+    border:1vw solid lime;
+    cursor:pointer;
+    outline:transparent;
+    font-size:2vw;
+}
+
+button:active {
+    background-color:rgb(64, 255, 64);
+    border-color:rgb(64, 255, 64);
 }
