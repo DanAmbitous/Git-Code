@@ -1,5 +1,3 @@
-$(document).ready(function(){
-    $("p").click(function(){
-      $(this).hide();
-    });
-  });
+$(function() {
+    $("form").html("This is a form element.");
+})
