@@ -14,5 +14,11 @@ $(function() {
 })
 
 $(function() {
+    $('#qAnda').click(function() {
+        $('form').css('display', 'none');
+    })
+}); 
+
+$(function() {
     $(console.log('This works'));
 });
