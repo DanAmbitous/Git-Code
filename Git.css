@@ -7,12 +7,65 @@ h1 {
 }
 
 h2 {
+    text-align: center;
+    color:rgb(167, 108, 0);
+    text-shadow:1vw 1vw 5vw gray;
+}
+
+h4 {
     background-color:dodgerblue;
-    margin-right:80%;
+    margin-right:85%;
     padding:1vh;
     border-radius:1vw;
+    border-right:1vw solid rgb(255, 166, 0);
 }
 
 a:active {
     color:rgb(167, 108, 0);
+}
+
+code {
+    background-color:rgb(10, 10, 10);
+    color:white;
+    padding:0.5vw;
+    border-radius:0.1vw;
+    letter-spacing: 0.3;
+}
+
+li {
+    padding:1vw;
+}
+
+form {
+    text-align: center;
+}
+
+.questions {
+    background-color:rgb(226, 147, 0);
+    padding:1%;
+    border-radius:5vw;
+}
+
+#button {
+    display:flex;
+    justify-content: center;
+}
+
+button {
+    background-color: lime;
+    padding:1vw;
+    border-radius:1vw;
+    border:1vw solid lime;
+    cursor:pointer;
+    outline:transparent;
+    font-size:2vw;
+}
+
+button:active {
+    background-color:rgb(64, 255, 64);
+    border-color:rgb(64, 255, 64);
+}
+
+.size {
+    font-size:10vw;
 }
