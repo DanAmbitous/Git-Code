@@ -8,5 +8,11 @@ $(function() {
 });
 
 $(function() {
+    $('button').click(function() {
+        $('button').after(prompt());
+    })
+})
+
+$(function() {
     $(console.log('This works'));
 });

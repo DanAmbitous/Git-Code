@@ -65,3 +65,7 @@ button:active {
     background-color:rgb(64, 255, 64);
     border-color:rgb(64, 255, 64);
 }
+
+.size {
+    font-size:10vw;
+}
