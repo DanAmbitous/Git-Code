@@ -89,5 +89,11 @@ button:active {
 }
 
 #star {
-    color:rgb(194, 165, 0);
+    color:orange;
+}
+
+.group-1 {
+    background-color: silver;
+    border-radius: 1vw;
+    padding-bottom:1vw;
 }
