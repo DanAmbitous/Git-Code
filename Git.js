@@ -3,7 +3,7 @@ $('#mainPage').hide();
 $('#utilizationsPage').hide();
 $('#overviewPage').hide();
 $('#questionsAndAnswersPage').hide();
-$('#bioPage').show();
+$('#bioPage').hide();
 
 // The beginning of the links in the navigation bar
 

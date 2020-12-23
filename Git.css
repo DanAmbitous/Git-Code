@@ -38,7 +38,7 @@ figure {
 
 .bioImages {
     background-color:rgb(29, 29, 29);
-    padding:5vw;
+    padding:3vw;
     border-radius:1vw;  
     transition:top ease 0.2s;
     position:relative;
@@ -49,7 +49,6 @@ figure {
     background-color:rgb(53, 53, 53);
     top:-1vw;
 }
-
 #pBio {
     text-align: center;
 }
