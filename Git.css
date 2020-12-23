@@ -53,3 +53,11 @@ figure {
 #pBio {
     text-align: center;
 }
+
+li {
+    background-color:rgb(255, 173, 20);
+    padding:1vw;
+    border-radius:1vw;
+    margin:1vw;
+    border-right:1vw solid dodgerblue;
+}
