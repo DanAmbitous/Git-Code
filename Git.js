@@ -1,9 +1,9 @@
 $('#thePages').show();
 $('#mainPage').hide();
 $('#utilizationsPage').hide();
-$('#overviewPage').show();
+$('#overviewPage').hide();
 $('#questionsAndAnswersPage').hide();
-$('#bioPage').hide();
+$('#bioPage').show();
 
 // The beginning of the links in the navigation bar
 
