@@ -4,6 +4,16 @@ $('#utilizationsPage').hide();
 $('#overviewPage').hide();
 $('#questionsAndAnswersPage').hide();
 $('#bioPage').hide();
+$('#signUpPage').hide();
+$('#logInPage').hide();
+
+$('#password').click(function() {
+    let inputPassword = $('<input>');
+    $('#password').after(inputPassword);
+    $('#password').css('display', 'none')
+    $('inputPassword').css('background-color', 'blue');
+});
+
 
 // The beginning of the links in the navigation bar
 
@@ -14,6 +24,8 @@ $('#main').click(function() {
     $('#bioPage').hide();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').hide();
+    $('#signUpPage').hide();
+    $('#logInPage').hide();
 });
 
 $('#utilizations').click(function() {
@@ -23,6 +35,8 @@ $('#utilizations').click(function() {
     $('#bioPage').hide();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').hide();
+    $('#signUpPage').hide();
+    $('#logInPage').hide();
 });
 
 $('#overview').click(function() {
@@ -30,7 +44,10 @@ $('#overview').click(function() {
     $('#thePages').show();
     $('#mainPage').hide();
     $('#utilizationsPage').hide();
+    $('#bioPage').hide();
     $('#questionsAndAnswersPage').hide();
+    $('#signUpPage').hide();
+    $('#logInPage').hide();
 })
 
 $('#questionsAndAnswers').click(function() {
@@ -40,11 +57,36 @@ $('#questionsAndAnswers').click(function() {
     $('#mainPage').hide();
     $('#utilizationsPage').hide();
     $('#overviewPage').hide();
+    $('#signUpPage').hide();
+    $('#logInPage').hide();
 })
 
 $('#bio').click(function() {
     $('#bioPage').show();
     $('#thePages').show();
+    $('#mainPage').hide();
+    $('#utilizationsPage').hide();
+    $('#questionsAndAnswersPage').hide();
+    $('#signUpPage').hide();
+    $('#logInPage').hide();
+});
+
+$('#signUp').click(function() {
+    $('#thePages').show();
+    $('#signUpPage').show();
+    $('#bioPage').hide();
+    $('#mainPage').hide();
+    $('#utilizationsPage').hide();
+    $('#questionsAndAnswersPage').hide();
+    $('#logInPage').hide();
+});
+
+
+$('#logIn').click(function() {
+    $('#thePages').show();
+    $('#logInPage').show();
+    $('#signUpPage').hide();
+    $('#bioPage').hide();
     $('#mainPage').hide();
     $('#utilizationsPage').hide();
     $('#questionsAndAnswersPage').hide();

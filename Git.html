@@ -10,11 +10,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Git</title>
 </head>
 <body>
     <!-- The header -->
     <header>
+        <div id='accountManagement'>
+        <p class='link' id='logIn'><span id='logIn' class="material-icons">person</span>Log in</p>
+        <p class='link' id='signUp'><span id='signUp' class="material-icons">person_add</span>Sign up</p>
+        </div>
         <h1><img src='git.png' alt='gitLogo'> Git</h1>
         <nav id='links'>
         <p class='link' id='main'>Main</p>
@@ -24,7 +30,6 @@
         <p class='link' id='bio'>Bio</p>
         </nav>
     </header>    
-    <!-- The header -->
 
     <div id='thePages'> <!--The almost all-encompising div-->
 
@@ -125,6 +130,25 @@
         <a href="https://codepen.io/danambitous" target="_blank"><img class='bioImages' src='codePen.png' alt='codePen'></a>
         <p id='contact'>If you want to contact me any of these sites are fine</p>
         </figure>
+    </div>
+
+    <div id='signUpPage'>
+        <h1>Sign up</h1>
+        <div id='container'>
+        <input placeholder="Email">
+        <input placeholder="Username">
+        <input placeholder="Password">
+        <button id='sign'>Sign Up</button>
+        </div>
+    </div>
+
+    <div id='logInPage'>
+        <h1>Login</h1>
+        <div id='container'>
+        <input placeholder="Username">
+        <input placeholder="Password">
+        </div>
+        <p id='password'>Forgot your password?</p>
     </div>
 
     </div>
