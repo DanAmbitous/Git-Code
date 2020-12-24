@@ -10,8 +10,6 @@ $('#logInPage').hide();
 $('#password').click(function() {
     let inputPassword = $('<input>');
     $('#password').after(inputPassword);
-    $('#password').css('display', 'none')
-    $('inputPassword').css('background-color', 'blue');
 });
 
 

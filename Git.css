@@ -82,6 +82,16 @@ figure {
     background-color:none;
 }
 
+#signUp:active {
+    background-color:lightgray;
+    border-radius:1vw;
+}
+
+#logIn:active  {
+    background-color:lightgray;
+    border-radius:1vw;
+}
+
 #container {
     display:flex;
     justify-content: center;
@@ -123,4 +133,8 @@ input::placeholder {
 
 #password:hover {
     color:rgb(128, 128, 255);
+}
+
+.material-icons {
+    padding:1vw;
 }
