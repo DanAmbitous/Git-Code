@@ -7,6 +7,7 @@ h1 {
     text-align: center;
     font-family: 'Fjalla One', sans-serif;
     padding:1vh;
+    text-shadow:1vw 1vw 5vw gray;
 }
 
 nav {
