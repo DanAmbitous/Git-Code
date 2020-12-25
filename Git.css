@@ -88,7 +88,6 @@ figure {
 }
 
 #logIn:active  {
-    background-color:lightgray;
     border-radius:1vw;
 }
 
@@ -96,8 +95,6 @@ figure {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    margin-left:30%;
-    margin-right:30%;
 }
 
 input {
@@ -124,17 +121,84 @@ input::placeholder {
     color:white;
 }
 
-#password {
+#forgotPassword {
     display: flex;
     justify-content: center;
     color:rgb(94, 94, 255);
     cursor:pointer;
 }
 
-#password:hover {
+#forgotPassword:hover {
     color:rgb(128, 128, 255);
 }
 
 .material-icons {
     padding:1vw;
+}
+
+.userInput {
+    display: flex;
+    justify-content: center;
+}
+
+#logIn {
+    text-align: center;
+}
+
+#forgotPasswordBtn {
+    cursor: pointer;
+    color:blue;
+    padding:1vw;
+    font-size:1.5vw;
+    
+}
+
+#loginButton {
+    background-color:lime;
+    border:1vw solid lime;
+    border-radius:1vw;
+    cursor:pointer;
+    font-size:120%;
+}
+
+table {
+    width:100%;
+    background-color: orange;
+    padding:1vw;
+    border:1px solid black;
+}
+
+tr {
+    border:1px solid black;
+}
+
+.name {
+    padding-left:5vw;
+    padding-bottom:1vh;
+    font-weight:600;
+}
+
+.explain {
+    padding-left:6vw;
+    padding-bottom:1vh;
+}
+
+button {
+    cursor:pointer;
+    outline:transparent;
+    box-shadow:0.5vw 0.5vw 10vw gray;
+}
+
+#remove {
+    display:flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+#removeEmail {
+    background-color:red;
+    border:1vw solid red;
+    border-radius: 1vw;
+    display: flex;
+    align-self: center;
 }

@@ -47,15 +47,36 @@
     <div id='utilizationsPage'>
         <h1>Utilizations Page</h1>
 
-        <p>Git is a version control system, that is used mostly by developers to keep track of changes to files of code, it is also used for coordinating work among programmers that are working on the source code, for softwear development. The goals of Git is speed, data integrity, and support for distributed, non-linear workflows. Here is a list of the uses of Git system.</p>
+        <p>Git is a version control system, that is used mostly by developers to keep track of changes to files of code, it is also used for coordinating work among programmers that are working on the source code, for softwear development. The goals of Git is speed, data integrity, and support for distributed, non-linear workflows. Here is are a lot of the uses of Git system as well as their explanation.</p>
 
-        <ul>
-            <li>Version Control - Control the history of the code files, which allows for easy activation between them which improves development.</li>
-            <li>Collobartion - Git and the remote versions such as GitHub make Collobartion on the same project much as easier, as each contribution to the source code from different people is quicky and easy.</li>
-            <li>Git creates a standardized way of sharing code which makes things simpler and overall better.</li>
-            <li>Provides a way for people to work on open source projects with ease.</li>
-            <li>A way to keep track of how much work someone has done on a code</li>
-        </ul>
+        <div id='tableDiv'>
+            <table>
+                <tr>
+                    <th>The Purposes</th>
+                    <th>The Explanations</th>
+                </tr>
+                <tr>
+                    <td class='name'>Version Control</td>
+                    <td class='explain'>Version control is the task of keeping softwear systems in different versions, which have different configuarations.</td> 
+                </tr>
+                <tr>
+                    <td class='name'>Collaboration</td>
+                    <td class='explain'>This is used often with git, it's working with others on the same code.</td> 
+                </tr>
+                <tr>
+                    <td class='name'>Distribution of files</td>
+                    <td class='explain'>This will help for the files to be distributed across mulitple computers, so if one computer or server goes down, there would still be copies in other places, websites such as GitHub, GitLab, BitBucket, SourceForge, Lunchpad, and many others are used to store the files.</td> 
+                </tr>
+                <tr>
+                    <td class='name'>Open Source</td>
+                    <td class='explain'>Git is almost indepensible for open source projects as it allows for contributions to those projects, which also a lot of times use remote websites such as GitHub, and GitLab.</td> 
+                </tr>
+                <tr>
+                    <td class='name'>To work on projects</td>
+                    <td class='explain'>Git brings plethora of opitions and benefits when it comes to doing any programming project.</td> 
+                </tr>
+            </table>
+        </div>
     </div>
 
     <!--overview page-->
@@ -143,12 +164,27 @@
     </div>
 
     <div id='logInPage'>
-        <h1>Login</h1>
-        <div id='container'>
-        <input placeholder="Username">
-        <input placeholder="Password">
+        <div id='login-form'>
+            <h1>Login</h1>
+            <div id='container'>                        
+                <div class="userInput">
+                    <input placeholder="Username">
+                    <input placeholder="Password">
+                </div>
+                </div> 
+            
+            <div id='logIn'>
+                <button id='loginButton'>Log in</button>
+            </div>
+            <div id="forgotPasswordBtn" style=" text-align: center; ">Forgot your password?</div>
+        </div>  
         </div>
-        <p id='password'>Forgot your password?</p>
+        <div id="forgotPassword" style=" text-align: center; display: none; ">
+            <div id='remove'>
+            <button id='removeEmail'><span class="material-icons">remove</span></button>
+            <input id="passwordEmail" placeholder="Email">
+            </div>
+        </div>
     </div>
 
     </div>

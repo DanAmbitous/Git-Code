@@ -5,11 +5,16 @@ $('#overviewPage').hide();
 $('#questionsAndAnswersPage').hide();
 $('#bioPage').hide();
 $('#signUpPage').hide();
-$('#logInPage').hide();
+$('#logInPage').show();
 
-$('#password').click(function() {
-    let inputPassword = $('<input>');
-    $('#password').after(inputPassword);
+$('#forgotPasswordBtn').click(function() {
+    $('#login-form').css('opacity', '.5');
+    $('#forgotPassword').css('display', 'block');
+});
+
+$('#removeEmail').click(function() {
+    $('#login-form').css('opacity', '1');
+    $('#forgotPassword').css('display', 'none');
 });
 
 
@@ -91,3 +96,7 @@ $('#logIn').click(function() {
 });
 
 // This is the end of the links in the navigation bar
+
+$(function() {
+
+})
