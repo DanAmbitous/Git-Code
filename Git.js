@@ -29,6 +29,7 @@ $('#main').click(function() {
     $('#questionsAndAnswersPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
+    $('#forgotPassword').hide();
 });
 
 $('#utilizations').click(function() {
@@ -40,6 +41,7 @@ $('#utilizations').click(function() {
     $('#questionsAndAnswersPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
+    $('#forgotPassword').hide();
 });
 
 $('#overview').click(function() {
@@ -51,6 +53,7 @@ $('#overview').click(function() {
     $('#questionsAndAnswersPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
+    $('#forgotPassword').hide();
 })
 
 $('#questionsAndAnswers').click(function() {
@@ -62,6 +65,7 @@ $('#questionsAndAnswers').click(function() {
     $('#overviewPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
+    $('#forgotPassword').hide();
 })
 
 $('#bio').click(function() {
@@ -72,6 +76,7 @@ $('#bio').click(function() {
     $('#questionsAndAnswersPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
+    $('#forgotPassword').hide();
 });
 
 $('#signUp').click(function() {
@@ -82,6 +87,7 @@ $('#signUp').click(function() {
     $('#utilizationsPage').hide();
     $('#questionsAndAnswersPage').hide();
     $('#logInPage').hide();
+    $('#forgotPassword').hide();
 });
 
 
@@ -93,10 +99,7 @@ $('#logIn').click(function() {
     $('#mainPage').hide();
     $('#utilizationsPage').hide();
     $('#questionsAndAnswersPage').hide();
+    $('#forgotPassword').hide();
 });
 
 // This is the end of the links in the navigation bar
-
-$(function() {
-
-})
