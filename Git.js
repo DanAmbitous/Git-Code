@@ -100,6 +100,7 @@ $('#logIn').click(function() {
     $('#utilizationsPage').hide();
     $('#questionsAndAnswersPage').hide();
     $('#forgotPassword').hide();
+    $('#login-form').css('opacity', '1');
 });
 
 // This is the end of the links in the navigation bar
