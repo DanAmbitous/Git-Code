@@ -1,11 +1,11 @@
 $('#thePages').show();
 $('#mainPage').hide();
-$('#utilizationsPage').hide();
+$('#utilizationsPage').show();
 $('#overviewPage').hide();
 $('#questionsAndAnswersPage').hide();
 $('#bioPage').hide();
 $('#signUpPage').hide();
-$('#logInPage').show();
+$('#logInPage').hide();
 
 $('#forgotPasswordBtn').click(function() {
     $('#login-form').css('opacity', '.5');
@@ -17,6 +17,32 @@ $('#removeEmail').click(function() {
     $('#forgotPassword').css('display', 'none');
 });
 
+$('#table > tbody > tr').each(function(index, element) { 
+    let oldText = $(this).find('td:eq(0)').html();
+    console.log(oldText)
+    $(this).find('td:eq(0)').html((index + 1) + "-" + oldText);
+});
+
+var sum = 0;
+var count = 0;
+
+$('#table > tbody > tr').each(function(index, element) {
+    let currentRating = $(this).find('td:eq(2)').html();
+    let number = Number(currentRating);
+    sum += number;
+    count += 1;
+});
+
+console.log('The sum is ' + sum);
+console.log('The average is ' + (sum / count));
+
+var sum = 0;
+var count = 0;
+
+console.log($('#table > tbody > tr'));
+
+console.log('The sum is ' + sum);
+console.log('The average is ' + (sum / count));
 
 // The beginning of the links in the navigation bar
 
