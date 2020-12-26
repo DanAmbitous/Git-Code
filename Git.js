@@ -18,9 +18,7 @@ $('#removeEmail').click(function() {
     $('#forgotPassword').css('display', 'none');
 });
 
-
-/*
-$('#table > tbody > tr').each(function(index, element) { 
+/* $('#table > tbody > tr').each(function(index, element) { 
     let oldText = $(this).find('td:eq(0)').html();
     console.log(oldText)
     $(this).find('td:eq(0)').html((index + 1) + "-" + oldText);
@@ -41,20 +39,30 @@ console.log(`The total is ${sum}`);
 console.log(`The average is ${sum / count}`); */
 
 var sum = 0;
-var share =  0;
 
 $('#table-website > tbody > tr').each(function(index,element) {
     let websites = $(this).find('td:eq(0)').html();
     $(this).find('td:eq(0)').html((index + 1) + ' - ' + websites);
 
     let numberOfUsers = $(this).find('td:eq(1)').html();
-    $(this).find('td:eq(1)').html((index + 1) + ' - ' + numberOfUsers)
 
     let number = Number(numberOfUsers);
 
     $('#total-users').html(`Total users ${sum += number}`);
-    $('GitHub-share').html(`About ${number} of the users are from GitHub`);
 });
+
+let githubShare = $('#github-number').html();
+let gitLabShare = $('#gitLab-number').html();
+let bitBucketShare = $('#bitBucket-number').html();
+let sourceForgeShare = $('#sourceForge-number').html();
+
+$('#GitHub-share').html(`GitHub is used by about ${(githubShare * 100) / 82100000 + '%'} of the users`);
+
+$('#GitLab-share').html(`GitLab is used by about ${(gitLabShare * 100) / 82100000 + '%'} of the users`);
+
+$('#BitBucket-share').html(`BitBucket is used by about ${(bitBucketShare * 100) / 82100000 + '%'} of the users`);
+
+$('#SourceForge-share').html(`SourceForge is used by about ${(sourceForgeShare * 100) / 82100000 + '%'} of the users`);
 
 // The beginning of the links in the navigation bar
 
