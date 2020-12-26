@@ -38,6 +38,8 @@ $('#table > tbody > tr').each(function(index, element) {
 console.log(`The total is ${sum}`);
 console.log(`The average is ${sum / count}`); */
 
+//jQuery version of numbering a list of elements
+
 var sum = 0;
 
 $('#table-website > tbody > tr').each(function(index,element) {
@@ -51,18 +53,37 @@ $('#table-website > tbody > tr').each(function(index,element) {
     $('#total-users').html(`Total users ${sum += number}`);
 });
 
-let githubShare = $('#github-number').html();
-let gitLabShare = $('#gitLab-number').html();
-let bitBucketShare = $('#bitBucket-number').html();
-let sourceForgeShare = $('#sourceForge-number').html();
+/*
 
-$('#GitHub-share').html(`GitHub is used by about ${(githubShare * 100) / 82100000 + '%'} of the users`);
+JS version of numbering a list of elements
 
-$('#GitLab-share').html(`GitLab is used by about ${(gitLabShare * 100) / 82100000 + '%'} of the users`);
+let table = document.getElementById('table-website');
 
-$('#BitBucket-share').html(`BitBucket is used by about ${(bitBucketShare * 100) / 82100000 + '%'} of the users`);
+for (let index = 0; index < table.rows.length; index++) {
+    if (index > 0) {
+        const tr = table.rows[index];
+        tr.cells[0].innerHTML = (index) + ' ' + tr.cells[0].innerHTML;
+        console.log(index);
+    }
+};
 
-$('#SourceForge-share').html(`SourceForge is used by about ${(sourceForgeShare * 100) / 82100000 + '%'} of the users`);
+*/
+
+let githubShare = parseInt($('#github-number').html());
+let gitLabShare = parseInt($('#gitLab-number').html());
+let bitBucketShare = parseInt($('#bitBucket-number').html());
+
+let sourceForgeShare = parseInt($('#sourceForge-number').html());
+
+// The percent
+
+$('#GitHub-share').html(`GitHub is used by about ${((githubShare * 100) / sum).toFixed(2) + '%'} of the users`);
+
+$('#GitLab-share').html(`GitLab is used by about ${((gitLabShare * 100) / sum).toFixed(2) + '%'} of the users`);
+
+$('#BitBucket-share').html(`BitBucket is used by about ${((bitBucketShare * 100) / sum).toFixed(2) + '%'} of the users`);
+
+$('#SourceForge-share').html(`SourceForge is used by about ${((sourceForgeShare * 100) / sum).toFixed(2) + '%'} of the users`);
 
 // The beginning of the links in the navigation bar
 
@@ -173,3 +194,7 @@ $('#logIn').click(function() {
 });
 
 // This is the end of the links in the navigation bar
+
+$('#clickButton').click(function() {
+    alert('Hello')
+});
