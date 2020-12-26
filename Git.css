@@ -168,6 +168,10 @@ table {
     border:1px solid black;
 }
 
+#table-website {
+    text-align: center;
+}
+
 tr {
     border:1px solid black;
 }
