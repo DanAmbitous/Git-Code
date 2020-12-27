@@ -18,14 +18,12 @@ $('#removeEmail').click(function() {
     $('#forgotPassword').css('display', 'none');
 });
 
-/* $('#table > tbody > tr').each(function(index, element) { 
+ $('#table > tbody > tr').each(function(index, element) { 
     let oldText = $(this).find('td:eq(0)').html();
-    console.log(oldText)
     $(this).find('td:eq(0)').html((index + 1) + "-" + oldText);
 });
 
-
-var sum = 0;
+/*var sum = 0;
 var count = 0;
 
 $('#table > tbody > tr').each(function(index, element) {
@@ -36,7 +34,7 @@ $('#table > tbody > tr').each(function(index, element) {
 });
 
 console.log(`The total is ${sum}`);
-console.log(`The average is ${sum / count}`); */
+console.log(`The average is ${sum / count}`);*/
 
 //jQuery version of numbering a list of elements
 
@@ -75,15 +73,18 @@ let bitBucketShare = parseInt($('#bitBucket-number').html());
 
 let sourceForgeShare = parseInt($('#sourceForge-number').html());
 
-// The percent
+let githubPercent = $('#GitHub-share').html(`GitHub is used by about ${((githubShare * 100) / sum).toFixed(2) + '%'} of the users`);
 
-$('#GitHub-share').html(`GitHub is used by about ${((githubShare * 100) / sum).toFixed(2) + '%'} of the users`);
+let gitLabPercent = $('#GitLab-share').html(`GitLab is used by about ${((gitLabShare * 100) / sum).toFixed(2) + '%'} of the users`);
 
-$('#GitLab-share').html(`GitLab is used by about ${((gitLabShare * 100) / sum).toFixed(2) + '%'} of the users`);
+let bitBucketPercent = $('#BitBucket-share').html(`BitBucket is used by about ${((bitBucketShare * 100) / sum).toFixed(2) + '%'} of the users`);
 
-$('#BitBucket-share').html(`BitBucket is used by about ${((bitBucketShare * 100) / sum).toFixed(2) + '%'} of the users`);
+let sourceForgePercent = $('#SourceForge-share').html(`SourceForge is used by about ${((sourceForgeShare * 100) / sum).toFixed(2) + '%'} of the users`);
 
-$('#SourceForge-share').html(`SourceForge is used by about ${((sourceForgeShare * 100) / sum).toFixed(2) + '%'} of the users`);
+$('GitHub-website').css('flex-basis', githubPercent);
+$('GitLab-website').css('flex-basis', gitLabPercent);
+$('BitBucket-website').css('flex-basis', bitBucketPercent);
+$('SourceForge-website').css('flex-basis', sourceForgePercent);
 
 // The beginning of the links in the navigation bar
 
