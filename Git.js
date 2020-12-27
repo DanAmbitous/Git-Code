@@ -65,8 +65,6 @@ for (let index = 0; index < table.rows.length; index++) {
     }
 };
 
-// This is a testaasas
-
 */
 
 let githubShare = parseInt($('#github-number').html());
