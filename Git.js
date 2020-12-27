@@ -70,21 +70,23 @@ for (let index = 0; index < table.rows.length; index++) {
 let githubShare = parseInt($('#github-number').html());
 let gitLabShare = parseInt($('#gitLab-number').html());
 let bitBucketShare = parseInt($('#bitBucket-number').html());
-
 let sourceForgeShare = parseInt($('#sourceForge-number').html());
 
-let githubPercent = $('#GitHub-share').html(`GitHub is used by about ${((githubShare * 100) / sum).toFixed(2) + '%'} of the users`);
+let githubPercent = ((githubShare * 100) / sum).toFixed(2);
+$('#GitHub-share').html(`GitHub is used by about ${githubPercent} % of the users`);
+$('#GitHub-website').css('flex-basis', githubPercent + 'px');
 
-let gitLabPercent = $('#GitLab-share').html(`GitLab is used by about ${((gitLabShare * 100) / sum).toFixed(2) + '%'} of the users`);
+let gitLabPercent = ((gitLabShare * 100) / sum).toFixed(2);
+$('#GitLab-share').html(`GitLab is used by about ${((gitLabShare * 100) / sum).toFixed(2)} % of the users`);
+$('#GitLab-website').css('flex-basis', gitLabPercent + 'px');
 
-let bitBucketPercent = $('#BitBucket-share').html(`BitBucket is used by about ${((bitBucketShare * 100) / sum).toFixed(2) + '%'} of the users`);
+let bitBucketPercent = ((bitBucketShare * 100) / sum).toFixed(2);
+$('#BitBucket-share').html(`BitBucket is used by about ${bitBucketPercent} % of the users`);
+$('#BitBucket-website').css('flex-basis', bitBucketPercent + 'px');
 
-let sourceForgePercent = $('#SourceForge-share').html(`SourceForge is used by about ${((sourceForgeShare * 100) / sum).toFixed(2) + '%'} of the users`);
-
-$('GitHub-website').css('flex-basis', githubPercent);
-$('GitLab-website').css('flex-basis', gitLabPercent);
-$('BitBucket-website').css('flex-basis', bitBucketPercent);
-$('SourceForge-website').css('flex-basis', sourceForgePercent);
+let sourceForgePercent = ((sourceForgeShare * 100) / sum).toFixed(2);
+$('#SourceForge-share').html(`SourceForge is used by about ${((sourceForgeShare * 100) / sum).toFixed(2)} % of the users`);
+$('#SourceForge-website').css('flex-basis', sourceForgePercent + 'px');
 
 // The beginning of the links in the navigation bar
 

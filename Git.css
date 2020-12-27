@@ -225,21 +225,17 @@ button {
 }
 
 #GitHub-website {
-    flex-basis:48.72px;
     background-color:rgb(15, 15, 15);
 }
 
 #GitLab-website {
-    flex-basis:0.12px;
     background-color:purple;
 }
 
 #BitBucket-website {
-    flex-basis:12.18px;
     background-color:rgb(0, 110, 255);
 }
 
 #SourceForge-website {
-    flex-basis:38.98px;
     background-color:red;
 }
