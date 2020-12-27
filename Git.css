@@ -207,3 +207,11 @@ button {
     display: flex;
     align-self: center;
 }
+
+#shares {
+    background-color:orange;
+    padding:1vw;
+    border-bottom-left-radius:1vw;
+    border-bottom-right-radius:1vw;
+    box-shadow:0 1vw 5vw gray;
+}

@@ -3,7 +3,7 @@ $('#mainPage').hide();
 $('#utilizationsPage').hide();
 $('#overviewPage').hide();
 $('#questionsAndAnswersPage').hide();
-$('#webiste-page').hide();
+$('#website-page').show();
 $('#bioPage').hide();
 $('#signUpPage').hide();
 $('#logInPage').hide();
@@ -93,7 +93,7 @@ $('#main').click(function() {
     $('#utilizationsPage').hide();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').hide();
-    $('#webiste-page').hide();
+    $('#website-page').hide();
     $('#bioPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
@@ -107,7 +107,7 @@ $('#utilizations').click(function() {
     $('#utilizationsPage').show();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').hide();
-    $('#webiste-page').hide();
+    $('#website-page').hide();
     $('#bioPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
@@ -120,7 +120,7 @@ $('#overview').click(function() {
     $('#utilizationsPage').hide();
     $('#overviewPage').show();
     $('#questionsAndAnswersPage').hide();
-    $('#webiste-page').hide();
+    $('#website-page').hide();
     $('#bioPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
@@ -133,7 +133,7 @@ $('#questionsAndAnswers').click(function() {
     $('#utilizationsPage').hide();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').show();
-    $('#webiste-page').hide();
+    $('#website-page').hide();
     $('#bioPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
@@ -146,7 +146,7 @@ $("#websites").click(function() {
     $('#utilizationsPage').hide();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').hide();
-    $('#webiste-page').show();
+    $('#website-page').show();
     $('#bioPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').hide();
@@ -159,7 +159,7 @@ $('#bio').click(function() {
     $('#utilizationsPage').hide();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').hide();
-    $('#webiste-page').hide();
+    $('#website-page').hide();
     $('#bioPage').show();
     $('#signUpPage').hide();
     $('#logInPage').hide();
@@ -172,7 +172,7 @@ $('#signUp').click(function() {
     $('#utilizationsPage').hide();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').hide();
-    $('#webiste-page').hide();
+    $('#website-page').hide();
     $('#bioPage').hide();
     $('#signUpPage').show();
     $('#logInPage').hide();
@@ -186,7 +186,7 @@ $('#logIn').click(function() {
     $('#utilizationsPage').hide();
     $('#overviewPage').hide();
     $('#questionsAndAnswersPage').hide();
-    $('#webiste-page').hide();
+    $('#website-page').hide();
     $('#bioPage').hide();
     $('#signUpPage').hide();
     $('#logInPage').show();
