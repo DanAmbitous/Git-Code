@@ -60,10 +60,12 @@ let table = document.getElementById('table-website');
 for (let index = 0; index < table.rows.length; index++) {
     if (index > 0) {
         const tr = table.rows[index];
-        tr.cells[0].innerHTML = (index) + ' ' + tr.cells[0].innerHTML;
+        tr.cells[0].innerHTML = (index) + ' ' + tr.cells[0].innerHTML; 
         console.log(index);
     }
 };
+
+// This is a test
 
 */
 
